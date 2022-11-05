@@ -1,7 +1,6 @@
 package pom;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 //Класс главной страницы
@@ -11,6 +10,10 @@ public class HomePage {
 
     private final String url = "https://qa-scooter.praktikum-services.ru/";
 
+    //Кнопка "Заказать" верхняя
+    private final By headerMakeOrderButton = By.xpath(".//div[@class = 'Header_Nav__AGCXC']/button[text() = 'Заказать']");
+    //Кнопка "Заказать" нижняя
+    private final By makeOrderButton = By.xpath(".//div[@class = 'Home_FinishButton__1_cWm']/button[text() = 'Заказать']");
     //Кнопка "Статус заказа"
     private final By orderStatusButton = By.className("Header_Link__1TAG7");
     //Кнопка "Go!"
@@ -42,8 +45,12 @@ public class HomePage {
         return this;
     }
     //Клик по кнопке "Заказать"
-    public void clickOrderButton(By buttonPlace) {
-        driver.findElement(buttonPlace).click();
+    public void clickOrderButton(String buttonPlace) {
+        if (buttonPlace.equals("верхняя кнопка")) {
+            driver.findElement(headerMakeOrderButton).click();
+        } else if (buttonPlace.equals("нижняя кнопка")) {
+            driver.findElement(makeOrderButton).click();
+        }
     }
     //Клик по кнопке "Далее"
     public HomePage clickGoButton() {

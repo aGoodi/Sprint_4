@@ -1,6 +1,5 @@
 package pom;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,9 +27,9 @@ public class RentPage {
     private final By orderIsPlaced = By.xpath(".//div[text() = 'Заказ оформлен']");
     //Выбор цвета самоката
     public void selectColorOfScooter(String color) {
-        if (color == "чёрный жемчуг") {
+        if (color.equals("чёрный жемчуг")) {
             driver.findElement(By.xpath(".//div[@class ='Order_Checkboxes__3lWSI']/label[@for = 'black']")).click();
-        } else if (color == "серая безысходность") {
+        } else if (color.equals("серая безысходность")) {
             driver.findElement(By.xpath(".//div[@class ='Order_Checkboxes__3lWSI']/label[@for = 'gray']")).click();
         }
     }

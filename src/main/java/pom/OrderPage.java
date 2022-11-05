@@ -2,8 +2,6 @@ package pom;
 
 import org.openqa.selenium.*;
 
-import java.util.List;
-
 //Класс для страницы заказа
 public class OrderPage{
 

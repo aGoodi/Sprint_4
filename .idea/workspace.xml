@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60e9a59-ebe1-43f2-8183-c4a8de718e24" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/BrowserRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/FAQSection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/NotFoundPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/OrderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/RentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FAQ/CheckFAQResponses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/order/MakeOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/orderStatus/CheckOrderStatus.java" afterDir="false" />
+    <list default="true" id="c60e9a59-ebe1-43f2-8183-c4a8de718e24" name="Changes" comment="add project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/OrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/RentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/RentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FAQ/CheckFAQResponses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/faq/CheckFAQResponses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/order/MakeOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/order/MakeOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orderStatus/CheckOrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,16 +45,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MakeOrder">
+  <component name="RunManager" selected="JUnit.CheckFAQResponses">
     <configuration name="All in ui-test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ui-test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <envs>
-        <env name="browser" value="ff" />
-      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,31 +60,14 @@
       <module name="ui-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FAQ.*" />
+          <option name="PATTERN" value="faq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="FAQ" />
-      <option name="MAIN_CLASS_NAME" value="FAQ.CheckFAQResponses" />
+      <option name="MAIN_CLASS_NAME" value="faq.CheckFAQResponses" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckFAQResponses.checkFAQResponsesIsCorrect (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ui-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="FAQ.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="FAQ" />
-      <option name="MAIN_CLASS_NAME" value="FAQ.CheckFAQResponses" />
-      <option name="METHOD_NAME" value="checkFAQResponsesIsCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="[1]" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,18 +76,35 @@
       <module name="ui-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FAQ.*" />
+          <option name="PATTERN" value="faq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="FAQ" />
-      <option name="MAIN_CLASS_NAME" value="FAQ.CheckFAQResponses" />
+      <option name="MAIN_CLASS_NAME" value="faq.CheckFAQResponses" />
       <option name="METHOD_NAME" value="checkFAQResponsesIsCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="[0]" />
       <envs>
         <env name="browser" value="ff" />
       </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckFAQResponses.checkFAQResponsesIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ui-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="faq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="FAQ" />
+      <option name="MAIN_CLASS_NAME" value="faq.CheckFAQResponses" />
+      <option name="METHOD_NAME" value="checkFAQResponsesIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="[1]" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,9 +134,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MakeOrder" />
-        <item itemvalue="JUnit.All in ui-test" />
         <item itemvalue="JUnit.CheckFAQResponses" />
+        <item itemvalue="JUnit.All in ui-test" />
+        <item itemvalue="JUnit.MakeOrder" />
         <item itemvalue="JUnit.CheckFAQResponses.checkFAQResponsesIsCorrect (1)" />
         <item itemvalue="JUnit.CheckFAQResponses.checkFAQResponsesIsCorrect" />
       </list>
@@ -184,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667489175382</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add project">
+      <created>1667496467009</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667496467009</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,7 +208,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="add project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

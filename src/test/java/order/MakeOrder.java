@@ -7,7 +7,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-import org.openqa.selenium.By;
 import pom.HomePage;
 
 @RunWith(Parameterized.class)
@@ -16,9 +15,9 @@ public class MakeOrder {
     @Rule
     public BrowserRule browserRule = new BrowserRule();
 
-    private By placeButton;
+    private String placeButton;
 
-    public MakeOrder(By placeButton) {
+    public MakeOrder(String placeButton) {
         this.placeButton = placeButton;
     }
 
@@ -26,8 +25,8 @@ public class MakeOrder {
     @Parameters
     public static Object[][] getButton() {
         return new Object[][] {
-                {By.xpath(".//div[@class = 'Header_Nav__AGCXC']/button[text() = 'Заказать']")},
-                {By.xpath(".//div[@class = 'Home_FinishButton__1_cWm']/button[text() = 'Заказать']")},
+                {"верхняя кнопка"},
+                {"нижняя кнопка"},
         };
     }
 

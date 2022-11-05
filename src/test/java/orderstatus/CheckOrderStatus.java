@@ -1,12 +1,8 @@
-package orderStatus;
+package orderstatus;
 
 import main.BrowserRule;
 import org.junit.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import pom.HomePage;
-
-import java.time.Duration;
 
 import static main.Utils.randomString;
 

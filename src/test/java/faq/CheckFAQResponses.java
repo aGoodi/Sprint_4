@@ -1,4 +1,4 @@
-package FAQ;
+package faq;
 
 import main.BrowserRule;
 import org.junit.Assert;
@@ -6,13 +6,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import pom.FAQSection;
 import pom.HomePage;
-
-import java.time.Duration;
 
 @RunWith(Parameterized.class)
 public class CheckFAQResponses {
